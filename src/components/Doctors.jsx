@@ -9,32 +9,32 @@ import { FaArrowRight } from "react-icons/fa";
 const Doctors = () => {
     const data = [
         {
-            img: "/src/assets/images/doc1.jpg",
+            img: "./src/assets/images/doc1.jpg",
             name: "Dr. Serena Mitchell",
             specialties: "Orthopedic Surgeon",
         },
         {
-            img: "/src/assets/images/doc2.jpg",
+            img: "./src/assets/images/doc2.jpg",
             name: "Dr. Julian Bennett",
             specialties: "Cardiologist",
         },
         {
-            img: "/src/assets/images/doc3.jpg",
+            img: "./src/assets/images/doc3.jpg",
             name: "Dr. Camila Rodriguez",
             specialties: "Pediatrician",
         },
         {
-            img: "/src/assets/images/doc4.jpg",
+            img: "./src/assets/images/doc4.jpg",
             name: "Dr. Victor Nguyen",
             specialties: "Neurologist",
         },
         {
-            img: "/src/assets/images/doc5.jpg",
+            img: "./src/assets/images/doc5.jpg",
             name: "Dr. Ethan Carter",
             specialties: "Dermatologist",
         },
         {
-            img: "/src/assets/images/doc6.jpg",
+            img: "./src/assets/images/doc6.jpg",
             name: "Dr. Olivia Martinez",
             specialties: "Ophthalmologist",
         },
@@ -108,16 +108,9 @@ const Doctors = () => {
             <div className=" mt-5">
                 <Slider ref={slider} {...settings}>
                     {data.map((e, index) => (
-                        <div
-                            className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
-                            key={index}
-                        >
+                        <div className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer" key={index}>
                             <div>
-                                <img
-                                    src={e.img}
-                                    alt="img"
-                                    className=" h-56 rounded-t-xl w-full"
-                                />
+                                <img src={e.img} alt="img" className=" h-56 rounded-t-xl w-full" />
                             </div>
 
                             <div className=" flex flex-col justify-center items-center">
